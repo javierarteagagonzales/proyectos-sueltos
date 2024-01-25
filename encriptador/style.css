@@ -1,11 +1,23 @@
 body{
     background-color: #E5E5E5;
+}
 
+html {
+    margin: 0;
+    padding: 0;
+
+}
+
+.secciones-encripta{
+    display: flex;
 }
 
 header{
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+.logo-alura>img{
+    width: 60px;
 }
 
 
@@ -14,24 +26,53 @@ input{
     top: 0;
     left: 0;
 }
-.mensajes-ingresa{
-    width: 90%;
+.miTextarea{
+    width: 400px;
     height: 400px;
+    overflow-y: auto;
     background-color: transparent;
     border: unset;
     padding: 15px;
-    text-align: left;
-    vertical-align: text-top;
+  /*  text-align: left; */
+
+
+    font-family: "Arial", sans-serif; /* Cambia la fuente del texto */
+    font-size: 20px; /* Cambia el tamaño del texto */
+    font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
+    color: #0A3871; /* Cambia el color del texto */
 }
-.mensajes-ingresa::placeholder{
+.miTextarea::placeholder{
     color: #0A3871;
     font-size: 20px;
-    text-align: left;
-    vertical-align: top;
+    vertical-align: text-top;
+    padding: 5px 20px 0px 0px ;
+
+}
+
+.miTextarea:focus{
+    outline: none;
+}
+
+
+/*texto minuscula y acentos*/
+.informacion{
+    font-size: 14px;
+}
+
+.informacion::before{
+    content: url('images/exclamation-circle-fill.png');
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .cajas-escribir{
-    width: 60%;
+    flex: 55;
+    background-color: transparent;
+    margin-left: 70px;
+}
+
+.mensajes-a{
+    display: none;
 }
 button {
     font-size: 12px; /* Texto mediano */
@@ -60,13 +101,12 @@ button#desencripta {
 */
 
 .cajas-mensaje{
-    width: 35%;
+    flex: 30;
 }
 
 .caja-muestra-mensajes{
     background-color: #ffffff;
-    padding: 180px 40px 180px 40px;
-    margin: 40px 10px 10px 20px;
+    padding: 120px 40px 120px 40px;
     border-radius: 12px;
 
 }

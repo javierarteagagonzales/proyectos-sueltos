@@ -10,31 +10,42 @@
 <body>
 
 <header>
-    <div>
+    <div class="logo-alura">
         <img src="images/Logo.svg" alt="">
     </div>
 </header>
 
-
+<div class="secciones-encripta">
 <section class="cajas-escribir">
-<input class="mensajes-ingresa" type="text" placeholder="Ingrese el texto aquí">
-<div>
+<div> 
     <div>
-        <h6 class="informacion"><img src="images/exclamation-circle-fill.svg" alt="" class="exclamacion">Solo letras minusculas y sin acentos</h6>
+        <textarea class="miTextarea" id="textAreaInput" placeholder="Ingrese el texto aquí"></textarea>
     </div>
-    <button id="encripta">Encripta</button>
-    <button id="desencripta">Desencriptar</button>
+
+
+    <div>
+        <p class="informacion">Solo letras minusculas y sin acentos</p>
+    </div>
+    <button id="encripta" onclick="encryptText();copyOriginalTextOnEncrypt()">Encripta</button>
+    <button id="desencripta" onclick="decryptText()">Desencriptar</button>
 
 </div>
 </section>
 <section class="cajas-mensaje">
-    <div class="caja-muestra-mensajes">
-        <img src="images/sin-mensaje.svg" class="busca" alt="Imagen de muestra">
-        <p class="text1">Ningún mensaje fue encontrado</p>
-        <p class="text2">Ingresa el texto que desees encriptar o desencriptar</p>
+    <div class="caja-muestra-mensajes" id="caja-muestra-mensajes">
+        <img src="images/sin-mensaje.svg" id="busca" class="busca" alt="Imagen de muestra">
+        <p class="text1" id="text1">Ningún mensaje fue encontrado</p>
+        <p class="text2" id="text2">Ingresa el texto que desees encriptar o desencriptar</p>
     </div>
-</section>
+    <div class="mensajes-a"  id="mensajes">
+        <h2>Resultado:</h2>
+        <p id="originalTextOnEncrypt"></p>
+        <div id="result"></div>
+        <button onclick="copyToClipboard()">Copiar al Portapapeles</button>
+        <p id="copyMessage"></p>
+    </div>
 
-    <p>Javier Arteaga Gonzales</p>
+</section>
+</div>
 </body>
 </html>
