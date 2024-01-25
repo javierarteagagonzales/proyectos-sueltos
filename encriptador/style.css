@@ -1,6 +1,15 @@
 body{
     background-color: #E5E5E5;
+    height: 95vh;
 }
+/* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  } */
+  
 
 html {
     margin: 0;
@@ -10,6 +19,11 @@ html {
 
 .secciones-encripta{
     display: flex;
+
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #f5f5f5;
 }
 
 header{
@@ -55,6 +69,13 @@ input{
 }
 
 
+.result{
+    font-family: "Arial", sans-serif; /* Cambia la fuente del texto */
+    font-size: 20px; /* Cambia el tamaño del texto */
+    font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
+    color: #0A3871; /* Cambia el color del texto */
+}
+
 /*texto minuscula y acentos*/
 .informacion{
     font-size: 14px;
@@ -96,9 +117,12 @@ button#desencripta {
 */
 
 .cajas-mensaje{
-    flex: 30;
+
+    width: 20%;
+    height: 55vh;
     background-color: #ffffff;
     padding: 120px 40px 120px 40px;
+    margin: 0px 40px 0px 20px;
     border-radius: 12px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
@@ -128,6 +152,13 @@ button#desencripta {
 
 }
 
+/*boton copiar */
+.copiar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*DISEÑO RESPONSIVO */
 /* Estilos para tabletas (400px a 750px) */
 @media only screen and (min-width: 400px) and (max-width: 700px) {
@@ -151,12 +182,33 @@ button#desencripta {
     .caja-muestra-mensajes{
         text-align: center;
     }
+
+
+    .miTextarea{
+        width: 90%;
+        height: 300px;
+        overflow-y: auto;
+        background-color: transparent;
+        border: unset;
+        padding: 15px;
+      /*  text-align: left; */
+    
+    
+        font-family: "Arial", sans-serif; /* Cambia la fuente del texto */
+        font-size: 20px; /* Cambia el tamaño del texto */
+        font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
+        color: #0A3871; /* Cambia el color del texto */
+    }
+
+    .cajas-escribir{
+        margin-left: 0px;
+    }
 }
-  
+
   /* Estilos para celulares (menor a 400px) */
 @media only screen and (max-width: 400px) {
     body {
-      font-size: 12px;
+    font-size: 12px;
       /* Otros estilos para celulares */
     }
     .secciones-encripta{
@@ -168,11 +220,30 @@ button#desencripta {
     .cajas-mensaje{
         flex: 30;
         background-color: #ffffff;
-        padding: 20px;
+        padding: 18px;
         margin: 40px 20px 20px 20px;
         border-radius: 12px;
     }
     .caja-muestra-mensajes{
         text-align: center;
     }
+    .miTextarea{
+        width: 90%;
+        height: 300px;
+        overflow-y: auto;
+        background-color: transparent;
+        border: unset;
+        padding: 15px;
+      /*  text-align: left; */
+    
+    
+        font-family: "Arial", sans-serif; /* Cambia la fuente del texto */
+        font-size: 14px; /* Cambia el tamaño del texto */
+        font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
+        color: #0A3871; /* Cambia el color del texto */
+    }
+    .cajas-escribir{
+        margin-left: 0px;
+    }
+}
 }
