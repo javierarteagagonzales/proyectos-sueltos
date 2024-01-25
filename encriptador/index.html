@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="app.js"></script>
 </head>
 <body>
@@ -24,7 +25,7 @@
 
 
     <div>
-        <p class="informacion">Solo letras minusculas y sin acentos</p>
+        <p class="informacion"><i class="fas fa-exclamation-circle"></i> Solo letras minusculas y sin acentos</p>
     </div>
     <button id="encripta" onclick="encryptText();copyOriginalTextOnEncrypt()">Encripta</button>
     <button id="desencripta" onclick="decryptText()">Desencriptar</button>
@@ -38,10 +39,11 @@
         <p class="text2" id="text2">Ingresa el texto que desees encriptar o desencriptar</p>
     </div>
     <div class="mensajes-a"  id="mensajes">
-        <h2>Resultado:</h2>
         <p id="originalTextOnEncrypt"></p>
+
+        <h2>Resultado:</h2>
         <div id="result"></div>
-        <button onclick="copyToClipboard()">Copiar al Portapapeles</button>
+        <button onclick="copyToClipboard()">Copiar texto</button>
         <p id="copyMessage"></p>
     </div>
 

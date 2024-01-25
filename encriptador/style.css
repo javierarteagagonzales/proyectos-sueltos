@@ -46,6 +46,7 @@ input{
     font-size: 20px;
     vertical-align: text-top;
     padding: 5px 20px 0px 0px ;
+    opacity: 0.6;
 
 }
 
@@ -57,12 +58,6 @@ input{
 /*texto minuscula y acentos*/
 .informacion{
     font-size: 14px;
-}
-
-.informacion::before{
-    content: url('images/exclamation-circle-fill.png');
-    display: inline-block;
-    margin-right: 5px;
 }
 
 .cajas-escribir{
@@ -102,12 +97,13 @@ button#desencripta {
 
 .cajas-mensaje{
     flex: 30;
-}
-
-.caja-muestra-mensajes{
     background-color: #ffffff;
     padding: 120px 40px 120px 40px;
     border-radius: 12px;
+}
+
+.caja-muestra-mensajes{
+
 
 }
 
