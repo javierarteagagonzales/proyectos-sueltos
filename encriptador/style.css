@@ -100,6 +100,7 @@ button#desencripta {
     background-color: #ffffff;
     padding: 120px 40px 120px 40px;
     border-radius: 12px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .caja-muestra-mensajes{
@@ -111,7 +112,6 @@ button#desencripta {
     width: 70%;
     align-items: center;
     display: inline-block;
-
 }
 .text1{
     color: #343A40;
@@ -126,4 +126,53 @@ button#desencripta {
     color: #495057;
     font-size: 16px;
 
+}
+
+/*DISEÑO RESPONSIVO */
+/* Estilos para tabletas (400px a 750px) */
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+    body {
+      font-size: 14px;
+      /* Otros estilos para tabletas */
+    }
+    .secciones-encripta{
+        display:inline;
+    }
+    .busca{
+        display: none;
+    }
+    .cajas-mensaje{
+        flex: 30;
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 40px 20px 20px 20px;
+        border-radius: 12px;
+    }
+    .caja-muestra-mensajes{
+        text-align: center;
+    }
+}
+  
+  /* Estilos para celulares (menor a 400px) */
+@media only screen and (max-width: 400px) {
+    body {
+      font-size: 12px;
+      /* Otros estilos para celulares */
+    }
+    .secciones-encripta{
+        display:inline;
+    }
+    .busca{
+        display: none;
+    }
+    .cajas-mensaje{
+        flex: 30;
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 40px 20px 20px 20px;
+        border-radius: 12px;
+    }
+    .caja-muestra-mensajes{
+        text-align: center;
+    }
 }
