@@ -1,6 +1,7 @@
 body{
     background-color: #E5E5E5;
     height: 95vh;
+    font-family: 'Inter', sans-serif;
 }
 /* .container {
     display: flex;
@@ -23,7 +24,6 @@ html {
     flex-direction: row;
     align-items: center;
 
-    background-color: #f5f5f5;
 }
 
 header{
@@ -50,7 +50,6 @@ input{
   /*  text-align: left; */
 
 
-    font-family: "Arial", sans-serif; /* Cambia la fuente del texto */
     font-size: 20px; /* Cambia el tamaño del texto */
     font-weight:400; /* Cambia el grosor del texto (puede ser normal, bold, etc.) */
     color: #0A3871; /* Cambia el color del texto */
