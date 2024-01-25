@@ -31,7 +31,9 @@ header{
     margin-bottom: 5px;
 }
 .logo-alura>img{
-    width: 60px;
+    width: 80px;
+    height: auto;
+
 }
 
 
@@ -122,14 +124,13 @@ button#desencripta {
     height: 55vh;
     background-color: #ffffff;
     padding: 120px 40px 120px 40px;
-    margin: 0px 40px 0px 20px;
+    margin: 0px 40px 10px 0px;
     border-radius: 12px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .caja-muestra-mensajes{
-
-
+    text-align: center;
 }
 
 .busca{
