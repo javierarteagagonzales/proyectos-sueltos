@@ -83,7 +83,7 @@ input{
 .cajas-escribir{
     flex: 55;
     background-color: transparent;
-    margin-left: 70px;
+    margin-left: 130px;
 }
 
 .mensajes-a{
@@ -91,9 +91,10 @@ input{
 }
 button {
     font-size: 12px; /* Texto mediano */
-    padding: 10px 70px; /* Padding regular */
+    padding: 20px 90px; /* Padding regular */
     cursor: pointer;
-    border-radius: 7px; /* Bordes redondeados */
+    border-radius: 20px; /* Bordes redondeados */
+    margin-right: 20px;
 }
 
 button#encripta {
