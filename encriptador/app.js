@@ -4,8 +4,6 @@ function encryptText() {
     document.getElementById('result').innerText = encryptedText;
     //copyOriginalTextOnEncrypt();
 
-
-   // limpiarTextoInicial();
     limpiarCaja();
 
 
@@ -20,10 +18,7 @@ function decryptText() {
     document.getElementById('result').innerText = decryptedText;
     //copyOriginalTextOnEncrypt();
 
-
-   // limpiarTextoInicial();
     limpiarCaja();
-
 
     document.getElementById('mensajes').style.display = 'block';
     document.getElementById('copyButton').style.display = 'block';
@@ -71,7 +66,7 @@ function copyOriginalTextOnEncrypt() {
 }
 
 
-
+//Funciones para encriptar y desencriptar
 function encrypt(text) {
     var encryptedText = text.replace(/e/g, 'enter')
                            .replace(/i/g, 'imes')
