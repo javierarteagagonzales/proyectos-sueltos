@@ -2,10 +2,10 @@ function encryptText() {
     var textInput = document.getElementById('textAreaInput').value;
     var encryptedText = encrypt(textInput);
     document.getElementById('result').innerText = encryptedText;
-    copyOriginalTextOnEncrypt();
+    //copyOriginalTextOnEncrypt();
 
 
-    limpiarTextoInicial();
+   // limpiarTextoInicial();
     limpiarCaja();
 
 
@@ -18,10 +18,10 @@ function decryptText() {
     var textInput = document.getElementById('textAreaInput').value;
     var decryptedText = decrypt(textInput);
     document.getElementById('result').innerText = decryptedText;
-    copyOriginalTextOnEncrypt();
+    //copyOriginalTextOnEncrypt();
 
 
-    limpiarTextoInicial();
+   // limpiarTextoInicial();
     limpiarCaja();
 
 
